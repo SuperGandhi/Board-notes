@@ -1,0 +1,32 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    background-color: #4c4177;
+    background-image: linear-gradient(315deg, #4c4177 0%, #2a5470 74%);
+    font-family: Lato, sans-serif;
+    margin-top: 40px;
+}
+
+.app-works{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.betadoge-logo-container{
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.betadoge-logo{
+    width: 150px;
+    height: 140px;
+}
