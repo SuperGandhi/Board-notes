@@ -2,9 +2,9 @@ import React from 'react'
 import "../styles/Tasks.css"
 import { AiFillCloseSquare } from "react-icons/ai";
 
-const Tasks = ({text}) => {
+const Tasks = ({id, text, completed, completedTask,deleteTask}) => {
   return (
-    <div className="tasks-container">
+    <div className={completed ? 'tasks-container completed' : 'tasks-container'}>
         <div className="tasks-text">
             {text}
         </div>

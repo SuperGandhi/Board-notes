@@ -1,20 +1,22 @@
 import './App.css';
-import Tasks from './components/Tasks';
-import dogebeta from './images/dogebeta.png'
+// import Form from './components/Form';
+import ListTasks from './components/ListTasks';
+// import dogebeta from './images/dogebeta.png'
+
 
 function App() {
   return (
     <div className="app-works">
       <div classNamew="betadoge-logo-container">
-          <img 
+          {/* <img 
             src={dogebeta} 
             className="betadoge-logo"
             alt ="dogebeta"
-            />
+            /> */}
       </div>
       <div className="works-main-list">
           <h1>My tasks</h1>
-          <Tasks text='Learn React'/>
+          <ListTasks/>
       </div>
     </div>
   );

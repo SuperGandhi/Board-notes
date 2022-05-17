@@ -1,4 +1,4 @@
-.tasks-container-icons{
+.tasks-container{
     width: 500px;
     min-height: 65px;
     background-color: #d9e4f5;
@@ -27,3 +27,7 @@
     margin: 5px;
 }
 
+.tasks-container.completed{
+    background-color: #5a01a7;
+    text-decoration: line-through;
+}

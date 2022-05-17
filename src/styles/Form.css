@@ -1,0 +1,36 @@
+/* Main structure */
+
+.tasks-form{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Space text */
+
+.tasks-input{
+    width: 350px;
+    font-size: 18px;
+    background-color:azure;
+    padding: 14px 32px 14px 16px;
+    border-radius: 4px 0 0 4px;
+    border: 2px solid #193122;
+    outline: none;
+}
+
+/* Button add task */
+
+.tasks-button{
+    padding: 16px;
+    font-size: 18px;
+    font-family: Roboto, sans-serif;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    outline: none;
+    background-color:azure;
+    color: #fff;
+    text-transform: capitalize;
+}
+
