@@ -18,6 +18,11 @@ const ListTasks = () => {
         }
     }
 
+    const deleteTask = id =>{
+        const tasksUpdate = tasks.filter(tasks => tasks.id !== id);
+        setTasks(tasksUpdate)
+    }
+
   return (
     <>
         <Form onSubmit={addTask}/>
@@ -30,6 +35,7 @@ const ListTasks = () => {
                     id= {task.id}
                     text={task.text}
                     completed={task.completed}
+                    deleteTask={deleteTask}
                     />
                 )
             }
