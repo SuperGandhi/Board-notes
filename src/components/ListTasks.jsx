@@ -8,6 +8,7 @@ const ListTasks = () => {
 
     const [tasks,setTasks]= useState([]);
     
+    // You can add ";" to finish of arrow function
     const addTask = task =>{
         console.log(task);
         
@@ -16,12 +17,24 @@ const ListTasks = () => {
             const tasksUpdated =[task, ...tasks];
             setTasks(tasksUpdated)
         }
-    }
+    };
 
     const deleteTask = id =>{
         const tasksUpdate = tasks.filter(tasks => tasks.id !== id);
         setTasks(tasksUpdate)
-    }
+    };
+
+    const completeTask = id => {
+        const tasksCurrent = tasks.map(
+            task =>{
+                if (task.id === id){
+                    task.complete = !task.complete;
+                }
+                return task;
+            }
+        );
+        setTasks(tasksCurrent);
+    };
 
   return (
     <>
@@ -35,6 +48,7 @@ const ListTasks = () => {
                     id= {task.id}
                     text={task.text}
                     completed={task.completed}
+                    completedTask= {completeTask}
                     deleteTask={deleteTask}
                     />
                 )

@@ -6,10 +6,12 @@ const Form = (props) => {
 
   const [input , setInput ]= useState('');
 
+
+  // each event "e" it's different 
   const driveChange =e=>{
     setInput(e.target.value);
     // console.log(e.target.value)
-  }
+  };
 
   const driveSend  = e => {
     // the function preventDefault use to don't charge again all the app,
@@ -23,7 +25,7 @@ const Form = (props) => {
     }
     
     props.onSubmit(taskNew)
-  }
+  };
   
   return (
     <form className="tasks-form"
